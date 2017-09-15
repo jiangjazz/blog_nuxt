@@ -1,0 +1,18 @@
+@charset "utf-8";
+// 字号大小
+$f-h1: 24px;
+$f-h2: 22px;
+$f-h3: 20px;
+$f-h4: 18px;
+$f-h5: 14px;
+$f-h6: 12px;
+$f-h7: 10px;
+
+// 全局的一些变量
+$minWidth: 1400px;      // 窗口最小展示宽度
+$minHeight: 600px;      // 窗口最小展示高度
+$headerHeight: 50px;    // 头部高度
+$navWidth: 200px;       // 左边导航栏宽度
+$navActive: #ecf4f2;    // 左边导航active状态背景色
+
+$ctNavHeight: 40px;     // 内容头部导航高度

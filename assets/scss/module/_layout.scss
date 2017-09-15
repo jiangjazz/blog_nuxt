@@ -1,0 +1,265 @@
+@charset "UTF-8";
+/**
+ * 布局
+ */
+.layout{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    min-width: $minWidth;
+    min-height: $minHeight;
+    overflow: auto;
+    .m-content{
+        position: absolute;
+        top: $headerHeight;
+        left: $navWidth;
+        bottom: 0;
+        right: 0;
+        overflow: auto;
+        background: $bg-content;
+    }
+}
+.data-content{
+    position: absolute;
+    top: $ctNavHeight;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: auto;
+}
+.u-breadcrumb{
+    background: $white!important;
+    .item{
+        display: inline-block;
+        margin: 0 5px;
+        vertical-align: middle;
+        font-size: 16px;
+    }
+    a{
+        color: #495060;
+        &:hover{
+            color: #2d8cf0;
+        }
+    }
+    .separator{
+        color: #888888;
+    }
+}
+.u-box-block{
+    padding: 15px 10px;
+    background-color: $white;
+    @include box-shadow(1px 1px 5px $shadow);
+}
+
+
+.m-table-ct{
+    padding: 20px;
+    background-color: $bg-content;
+}
+.ivu-input{
+    &:hover{
+        border-color: $main;
+    }
+    &:focus{
+        border-color: $main;
+        @include box-shadow(0 0 0 2px rgba($main, 0.2));
+    }
+}
+.ivu-page{
+    &-prev{
+        margin-right: 0;
+        @include border-radius(4px 0 0 4px);
+        &:hover{
+            border-color: $main;
+            a{
+                color: $main;
+            }
+        }
+    }
+    &-item{
+        margin-right: 0;
+        @include border-radius(0);
+        &:hover{
+            border-color: $main;
+            color: $main;
+            a{
+                color: $main;
+            }
+        }
+        &-active{
+            border-color: $main;
+            background-color: $main;
+            a{
+                color: $white;
+            }
+            &:hover{
+                a{
+                    color: $white;
+                }
+            }
+        }
+        &:not(:last-child){
+            // border-right: 0;
+        }
+        &-jump-next,
+        &-jump-prev{
+            margin-right: 0;
+            @include border-radius(0);
+            &:hover{
+                border-color: $main;
+                color: $main;
+                a{
+                    color: $main;
+                }
+            }
+        }
+    }
+    &-next{
+        margin-left: 0;
+        @include border-radius(0 4px 4px 0);
+        &:hover{
+            border-color: $main;
+            a{
+                color: $main;
+            }
+        }
+    }
+    &-disabled{
+        background-color: $disabled;
+        a{
+            color: $white;
+        }
+        &:hover{
+            border-color: $disabled;
+            a{
+                color: $white;
+            }
+        }
+    }
+}
+.ivu-page-options-elevator{
+    input{
+        &:hover{
+            border-color: $main;
+        }
+        &:focus{
+            border-color: $main;
+            @include box-shadow(0 0 0 2px rgba($main, 0.2));
+        }
+    }
+}
+.ivu-alert{
+    margin-bottom: 0;
+}
+.ivu-btn{
+    // reset
+    &:hover{
+        color: $main;
+        border-color: $main;
+    }
+    &-success{
+        &:hover{
+            color: $white;
+        }
+    }
+    &-primary,
+    &.main{
+        color: $white;
+        border-color: $main;
+        background-color: $main;
+        &:hover{
+            color: $white;
+            border-color: $main-hover;
+            background-color: $main-hover;
+        }
+    }
+    // new
+    &.purple{
+        color: $white;
+        background-color: $purple;
+        border-color: $purple;
+        &:hover{
+            color: $white;
+            background-color: $purple-hover;
+            border-color: $purple-hover;
+        }
+    }
+    &.success{
+        color: $white;
+        background-color: $green;
+        border-color: $green;
+        &:hover{
+            color: $white;
+            background-color: $green-hover;
+            border-color: $green-hover;
+        }
+    }
+    &.warning{
+        color: $white;
+        background-color: $orange;
+        border-color: $orange;
+        &:hover{
+            color: $white;
+            background-color: $orange-hover;
+            border-color: $orange-hover;
+        }
+    }
+    &.primary{
+        color: $white;
+        background-color: $blue;
+        border-color: $blue;
+        &:hover{
+            color: $white;
+            background-color: $blue-hover;
+            border-color: $blue-hover;
+        }
+    }
+}
+
+.ivu-btn-group{
+    &:not(.ivu-btn-group-vertical){
+        .ivu-btn-primary:first-child:not(:last-child){
+            border-right-color: $main;
+        }
+        .ivu-btn-primary+.ivu-btn,
+        .ivu-btn-primary:last-child:not(:first-child){
+            border-left-color: $main;
+        }
+    }
+}
+
+.ivu-switch{
+    &-checked{
+        background-color: $main;
+        border-color: $main;
+    }
+}
+
+.ivu-select{
+    &-selection{
+        &:hover{
+            border-color: $main;
+        }
+    }
+    &-visible{
+        .ivu-select-selection{
+            border-color: $main;
+            @include box-shadow(0 0 0 2px rgba($main, .2));
+        }
+    }
+}
+
+.ivu-radio{
+    &-inner{
+        &:after{
+            background-color: $main;
+        }
+    }
+    &-checked{
+        .ivu-radio-inner{
+            border-color: $main;
+        }
+    }
+}

@@ -1,0 +1,10 @@
+@charset "utf-8";
+/******************************
+ * 全局变量
+ */
+@import 'mixin';        //mixin生产
+@import 'cssproperty';  //css属性生产（主要css3）
+@import 'color';      //颜色
+@import 'transition';       //其他
+@import 'var';       //其他
+@import 'reset';       //其他
