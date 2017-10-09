@@ -1,7 +1,12 @@
 @charset "UTF-8";
+
 /************************************************************
  * 入口文件
  */
 
-@import './base/index';                       //基础变量 minxin等
-@import './module/index';                       //模块
+// 基础变量 全局样式
+@import './base/index';
+// 组件样式
+@import './components/index';
+// 模块样式
+@import './module/index';

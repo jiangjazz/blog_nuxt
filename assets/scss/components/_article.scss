@@ -1,0 +1,91 @@
+@charset "UTF-8";
+
+.u-article{
+    margin-top: 15px;
+    padding: 25px 0;
+    background: $white;
+    border-bottom: 1px solid #f0f0f0;
+    &:hover{
+        cursor: pointer;
+        @include border-radius(4px);
+        @include transition(.3s);
+        @include box-shadow(1px 3px 9px #ccc);
+    }
+
+    .news-img-box{
+        position: relative;
+        padding-left: 10px;
+        width: 205px;
+        height: 145px;
+        .hot {
+            position: absolute;
+            width: 30px;
+            height: 24px;
+            line-height: 24px;
+            text-align: center;
+            color: #fff;
+            background-color: #db4659;
+            top: 5px;
+            left: -10px;
+            z-index: 145;
+        }
+        span.triangle {
+            position: absolute;
+            top: 24px;
+            left: -10px;
+            width: 0;
+            height: 0;
+            z-index: 33;
+            border-left: 10px solid transparent;
+            border-right: 10px solid #df0d3a;
+            border-bottom: 7px solid transparent;
+        }
+    }
+    .news-content {
+        width: 450px;
+        a{
+            color: #3d3d3d;
+        }
+    }
+    .title-h3{
+        padding: 10px 0;
+        color: #3d3d3d;
+        font-size: 16px;
+    }
+    .author-info {
+        height: 33px;
+        line-height: 33px;
+        color: #919898;
+        font-size: 14px;
+        p.author {
+            width: 90px;
+            height: 33px;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            span {
+                padding-left: 10px;
+                position: relative;
+                bottom: 11px;
+            }
+        }
+        a {
+            color: #919898;
+        }
+        span.date-time {
+            display: block;
+            width: 218px;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            padding-right: 5px;
+        }
+    }
+    p.news-info {
+        color: #526163;
+        height: 56px;
+        overflow: hidden;
+        font-size: 14px;
+        padding: 8px 12px 3px 5px;
+    }
+}

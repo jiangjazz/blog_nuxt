@@ -1,0 +1,63 @@
+.page-home {
+  .banner {
+    margin-top: 15px;
+  }
+  .banner-left {
+    width: 480px;
+    height: 300px;
+    @include box-shadow(0 3px 10px $shadow);
+    img {
+      display: block;
+      margin: auto;
+      line-height: 200px;
+    }
+  }
+  .banner-right {
+    margin: 14px auto 0 auto;
+    width: 380px;
+    height: 272px;
+    position: relative;
+    @include box-shadow(0 3px 10px $shadow);
+    &-text {
+      width: 230px;
+      height: 120px;
+      position: absolute;
+      right: 95px;
+      bottom: 50px;
+      color: #f7b0b0;
+      line-height: 25px;
+      font-size: $f-h5;
+      font-weight: 500;
+    }
+  }
+  .main-content {
+    margin-top: 20px;
+    .about {
+      margin-top: 15px;
+      padding: 25px 20px;
+      background: $white;
+      &:hover {
+        @include box-shadow(1px 3px 9px #ccc);
+      }
+    }
+  }
+  .title-h2 {
+    margin: 0 0 10px 3px;
+    padding-left: 5px;
+    width: 200px;
+    height: 30px;
+    line-height: 30px;
+    font-size: $f-h5;
+    color: $white;
+    font-weight: 500;
+    text-indent: 1em;
+    background: #4b5153;
+    @include box-shadow(5px 3px 10px #756f71);
+    @include border-radius(3px);
+    span {
+      padding-left: 10px;
+      color: #32c7f7;
+      font-size: $f-h6;
+    }
+  }
+}

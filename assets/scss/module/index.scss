@@ -1,5 +1,10 @@
 @charset "utf-8";
+
 /******************************
  * 模块
  */
-@import 'layout';        //结构布局
+
+// 结构布局
+@import 'layout';
+// 首页
+@import 'home';
